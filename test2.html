@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	
+	     // 判断是否为偶数
+		// console.log(2&1)
+		// console.log(5&1)
+		// 
+		// console.log(6&1)
+	
+		// 创建电话号码
+		// function createPhoneNumber(numbers){
+		// 	var format = "(xxx) xxx-xxxx";
+		// 	for(var i = 0; i < numbers.length; i++){
+		// 		format = format.replace('x', numbers[i]);
+		// 	}
+		// 	return format;
+		// }
+		// 	
+	//    console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+	
+	
+	
+	
+	 //找出最短单词的长度
+	 var s="bitcoin take over the world maybe who knows perhaps"
+	 // const findShort = s => s.split(' ').map(w => w.length).sort((a,b) => a-b)[0];
+	  var a = s.split(' ').map(w => w.length)
+	  a = a.sort( (a,b) => a-b )  //数字升序排序
+	  
+	  console.log(a);
+	  
+	  function findShort(s){
+		   
+		   //apply可以获取数组中最大或最小的值
+		   
+	     return Math.min.apply(null, s.split(' ').map(w => w.length));
+		  
+	  }
+	
+	
+</script>
